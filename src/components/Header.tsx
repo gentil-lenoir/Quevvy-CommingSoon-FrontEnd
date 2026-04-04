@@ -180,10 +180,8 @@ const Header: React.FC = () => {
       `}</style>
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-container">
-          <Link to="/" className="logo ripple" onClick={addRipple}>
+<Link to="/" className="logo ripple" onClick={addRipple}>
             <img src="/img/general-logo.png" alt="Quevvy" />
-            <img src="/img/quevvy_logo_transparent.png" alt="Quevvy" />
-            <span>Q</span>
           </Link>
 
           <nav className="nav-links">

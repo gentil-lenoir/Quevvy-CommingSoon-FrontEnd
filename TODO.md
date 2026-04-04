@@ -1,5 +1,11 @@
-# Task Progress: Fix Compilation Errors
+# Task Progress: Fix Header Logo & Icons
 
-✅ Step 1: Created src/styles/globals.css with base styles, vars, animations.
+## TODO Steps (from approved plan):
+- [x] Step 1: Create TODO.md to track progress
+- [x] Step 2: Edit src/components/Header.tsx (replace logo with only general-logo.png)
+- [x] Step 3: Edit public/index.html (add Font Awesome CDN)
+- [x] Step 4: Verify changes (reload app, check header/icons)
+- [x] Step 5: Mark complete & attempt_completion
 
-✅ Step 2: Fixed imports in App.js, views/*.tsx, components/ErrorPages.tsx (created globals.css, path fixes).\n\n**Pending:**\n- [ ] Step 3: Test compilation\n- [ ] Step 4: Complete
+**Status:** Task complete! 🎉
+

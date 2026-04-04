@@ -193,7 +193,7 @@ export function Footer() {
           {[
             { href: "https://quevvy.com", icon: "fas fa-globe" },
             { href: "https://linkedin.com/company/azenium", icon: "fab fa-linkedin-in" },
-            { href: "https://x.com/quevvy_platform", icon: "fab fa-twitter" },
+            { href: "https://x.com/quevvyplatform", icon: "fab fa-twitter" },
             { href: "https://chat.whatsapp.com/E9On6Tbcv260KVYFD5hqjK", icon: "fab fa-whatsapp" },
             { href: "https://www.pinterest.com/quevvy_platform", icon: "fab fa-pinterest" },
           ].map(s => (
