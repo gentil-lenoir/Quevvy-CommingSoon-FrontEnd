@@ -14,7 +14,7 @@ export function PageLoader() {
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 18 }}>
         <div className="loader-ring" />
         <p style={{ fontSize: 13, fontWeight: 500, color: "#8896B3", letterSpacing: "1.5px", animation: "fadePulse 1.5s ease-in-out infinite" }}>
-          QUEVVY
+          QUEVVY PLATFORM
         </p>
       </div>
     </div>
@@ -100,7 +100,8 @@ export function Navbar({ backLink, showLinks = false }: NavbarProps) {
       flexWrap: "wrap",
       gap: "1rem",
       marginBottom: "2.5rem",
-      padding: scrolled ? "0.7rem 1.5rem" : "0",
+      paddingTop: "0.7rem",
+      padding: "0.7rem 1.5rem",
       background: scrolled ? "rgba(8,10,16,0.85)" : "transparent",
       backdropFilter: scrolled ? "blur(20px)" : "none",
       borderRadius: scrolled ? "2rem" : 0,

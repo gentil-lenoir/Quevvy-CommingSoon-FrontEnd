@@ -12,19 +12,7 @@
 
   <!-- Partenariats -->
   <url>
-    <loc>https://quevvy.com/partner</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://quevvy.com/partners</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://quevvy.com/partnership</loc>
+    <loc>https://partner.quevvy.com</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -37,12 +25,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://quevvy.com/donation</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Images principales -->
   <url>
@@ -50,11 +32,11 @@
     <image:image>
       <image:loc>https://quevvy.com/img/general-logo.png</image:loc>
       <image:title>Quevvy Logo Principal</image:title>
-      <image:caption>Plateforme d'invitations numériques sécurisées</image:caption>
+      <image:caption>Quevvy Icon</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://quevvy.com/img/quevvy_logo_transparent.png</image:loc>
-      <image:title>Quevvy Logo Transparent</image:title>
+      <image:title>Quevvy Logo</image:title>
     </image:image>
   </url>
 
