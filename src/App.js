@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./views/Home.tsx";
 import Donors from "./views/Donors.tsx";
 import Donate from "./views/Donate.tsx";
-// import {Analytics} from '@vercel/analytics/react';
+import {Analytics} from '@vercel/analytics/react';
 
 function App() {
   return (
     <Router>
-      {/* <Analytics /> */}
+      <Analytics />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/donate" element={<Donate />} />
