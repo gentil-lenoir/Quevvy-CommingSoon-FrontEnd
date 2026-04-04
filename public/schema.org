@@ -1,0 +1,73 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://quevvy.com/#website",
+      "url": "https://quevvy.com/",
+      "name": "Quevvy",
+      "description": "Plateforme SaaS d'invitations numériques sécurisées avec QR anti-fraude, RSVP et billetterie intégrée. 20 invitations gratuites par événement. Coming 2026.",
+      "inLanguage": "fr-FR",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://quevvy.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@id": "#organization"
+      }
+    },
+    {
+      "@id": "#organization",
+      "@type": "Organization",
+      "name": "Quevvy Platform",
+      "url": "https://quevvy.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://quevvy.com/img/general-logo.png"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+243-978-089-552",
+        "contactType": "Support WhatsApp",
+        "availableLanguage": ["fr", "en"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Goma",
+        "addressRegion": "Nord-Kivu",
+        "addressCountry": "CD"
+      },
+      "sameAs": [
+        "https://twitter.com/quevvyplatform",
+        "https://linkedin.com/company/quevvy"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://quevvy.com/#software",
+      "name": "Quevvy",
+      "description": "Plateforme d'invitations numériques sécurisées avec QR codes anti-fraude et gestion RSVP.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "20 invitations gratuites par événement"
+      },
+      "featureList": [
+        "QR anti-fraude AES-256",
+        "RSVP intelligent",
+        "Billetterie intégrée",
+        "Analytics temps réel"
+      ],
+      "provider": {
+        "@id": "#organization"
+      }
+    }
+  ]
+}
