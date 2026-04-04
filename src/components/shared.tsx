@@ -114,7 +114,7 @@ export function Navbar({ backLink, showLinks = false }: NavbarProps) {
       {/* Logo */}
       <a href="/" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
         <div>
-          <img src="/img/logo.png" class="logo-long" alt="Logo of Quevvy" />
+          <img src="/img/logo.png" className="logo-long" alt="Logo of Quevvy" />
         </div>
     </a>
 
