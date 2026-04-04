@@ -4,23 +4,22 @@ import { PageLoader, Navbar, Footer, Toast } from "../components/shared.tsx";
 import "../styles/globals.css";
 
 const BANK_DETAILS = {
-  beneficiary: "Quevvy Company",
-  iban: "CD12 3456 7890 1234 5678",
-  bic: "BCDCCDKI",
-  bank: "Banque Commerciale du Congo",
-  ref: "DON-QUEVVY-2026",
+  beneficiary: "GENTIL MALIYAMUNGU BALEGAMIRE",
+  numero: "5273 6400 0161 3969",
+  bank: "MTM Momo Virtual Card",
 };
 
 const MOBILE_DETAILS = [
-  { label: "M-Pesa (DRC)", number: "+243 978 089 552", name: "Gentil Maliyamungu" },
-  { label: "MTN Mobile Money (RWA)", number: "+250 792 871 952", name: "Quevvy Company" },
+  { label: "Airtel (DRC)", number: "+243 978 089 552", name: "Gentil Maliyamungu B" },
+  { label: "Airtel (Rwanda)", number: "+250 738 663 519", name: "Gentil Maliyamungu B" },
+  { label: "MTN Mobile Money (Rwanda)", number: "+250 792 871 952", name: "Gentil Maliyamungu B" },
 ];
 
 const MOCK_DONORS = [
-  { name: "Diane Vanessa M.", amount: 150, message: "Pour l'empowerment féminin en tech !", date: "15 Jan 2026" },
-  { name: "John Santos N.", amount: 200, message: "Fier de soutenir l'innovation locale 🇷🇼", date: "14 Jan 2026" },
-  { name: "Sophie Ntumba", amount: 75, message: "Pour un avenir numérique inclusif", date: "13 Jan 2026" },
-  { name: "Mme Claire Kabila", amount: 250, message: "Éducation numérique pour tous !", date: "12 Jan 2026" },
+  { name: "Diane Vanessa M.", amount: 150, message: "Pour l'empowerment féminin en tech !", date: "29 Mars 2026" },
+  { name: "John Santos N.", amount: 200, message: "Fier de soutenir l'innovation locale 🇷🇼", date: "01 Avril 2026" },
+  { name: "Sophie Ntumba", amount: 75, message: "Pour un avenir numérique inclusif", date: "04 Avril 2026" },
+  { name: "Mme Claire Kabila", amount: 250, message: "Éducation numérique pour tous !", date: "12 Mars 2026" },
   { name: "Dr. Christophe Mupenzi", amount: 80, message: "Soutien précieux au lancement", date: "En vedette" },
   { name: "Député Matayo John", amount: 125, message: "Engagé pour l'innovation locale", date: "En vedette" },
 ];
@@ -131,14 +130,12 @@ export default function Donate() {
               border: "1px solid rgba(110,231,179,0.18)", borderRadius: "2rem", padding: "1.8rem",
             }}>
               <h2 style={{ fontSize: "1.3rem", fontWeight: 700, marginBottom: "1.2rem", display: "flex", alignItems: "center", gap: 8 }}>
-                <i className="fas fa-university" style={{ color: "#6EE7B3" }} /> Virement Bancaire
+                <i className="fas fa-university" style={{ color: "#6EE7B3" }} /> Carte Bancaire
               </h2>
               <div style={{ background: "rgba(0,0,0,0.3)", borderRadius: "1.2rem", padding: "1.2rem" }}>
                 <DetailRow label="Bénéficiaire" value={BANK_DETAILS.beneficiary} />
-                <DetailRow label="IBAN" value={BANK_DETAILS.iban} />
-                <DetailRow label="BIC/SWIFT" value={BANK_DETAILS.bic} />
+                <DetailRow label="Numero" value={BANK_DETAILS.numero} />
                 <DetailRow label="Banque" value={BANK_DETAILS.bank} />
-                <DetailRow label="Référence" value={BANK_DETAILS.ref} />
               </div>
             </div>
 
@@ -157,20 +154,6 @@ export default function Donate() {
                   <DetailRow label="Nom" value={m.name} />
                 </div>
               ))}
-            </div>
-
-            {/* PayPal hint */}
-            <div style={{
-              background: "rgba(13,16,24,0.75)", backdropFilter: "blur(14px)",
-              border: "1px solid rgba(59,130,246,0.25)", borderRadius: "2rem", padding: "1.5rem",
-              textAlign: "center",
-            }}>
-              <i className="fab fa-paypal" style={{ fontSize: "2rem", color: "#60A5FA", marginBottom: 8, display: "block" }} />
-              <p style={{ fontWeight: 700, marginBottom: 4 }}>PayPal</p>
-              <p style={{ color: "#8896B3", fontSize: "0.88rem", marginBottom: "0.8rem" }}>
-                Envoyez à: <strong style={{ color: "#F0F3FA" }}>quevvy.platform@outlook.com</strong>
-              </p>
-              <CopyBtn value="quevvy.platform@outlook.com" />
             </div>
           </div>
 
@@ -246,7 +229,7 @@ export default function Donate() {
 
               <div>
                 <label style={{ display: "block", marginBottom: "0.4rem", fontSize: "0.83rem", fontWeight: 600, color: "#C9D6FF" }}>
-                  Message (optionnel)
+                  Message (*)
                 </label>
                 <textarea style={{ ...inputStyle, minHeight: 100, resize: "vertical" }}
                   placeholder="Un mot pour la communauté Quevvy..."
@@ -266,7 +249,19 @@ export default function Donate() {
                 Votre client email s'ouvrira — envoyez le message à Quevvy. Vérification sous 24h.
               </p>
             </form>
-          </div>
+            {/* PayPal hint */}
+            <div style={{
+              background: "rgba(13,16,24,0.75)", backdropFilter: "blur(14px)",
+              border: "1px solid rgba(59,130,246,0.25)", borderRadius: "2rem", padding: "1.5rem",
+              textAlign: "center",
+            }}>
+              <i className="fab fa-paypal" style={{ fontSize: "2rem", color: "#60A5FA", marginBottom: 8, display: "block" }} />
+              <p style={{ fontWeight: 700, marginBottom: 4 }}>Pas Moyen de Payer ???</p>
+              <p style={{ color: "#8896B3", fontSize: "0.88rem", marginBottom: "0.8rem" }}>
+                Contactez-nous: <strong style={{ color: "#F0F3FA" }}>+243 978 089 552</strong>
+              </p>
+              <CopyBtn value="quevvy.platform@outlook.com" />
+            </div>          </div>
         </div>
 
         {/* Recent donors preview */}

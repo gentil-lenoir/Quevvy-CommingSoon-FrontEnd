@@ -130,16 +130,16 @@ export default function Home() {
             lineHeight: 1.18, letterSpacing: "-0.025em",
             animation: "fadeUp 0.7s ease-out 0.1s both",
           }}>
-            L'avenir des<br />
-            <span className="gradient-text">invitations</span><br />
-            est numérique.
+            Ça Viens Bientôt<br />
+            <span className="gradient-text">Quevvy</span><br />
+            SaaS Platform.
           </h1>
 
           <p style={{
             fontSize: "1.2rem", color: "#C9D6FF", maxWidth: 560, lineHeight: 1.7,
             animation: "fadeUp 0.7s ease-out 0.2s both",
           }}>
-            Quevvy révolutionne la gestion d'événements avec des invitations sécurisées, des QR codes anti-fraude et des analytics en temps réel.{" "}
+            <strong>Quevvy</strong>, une plateforme SaaS de ticketing, révolutionne la gestion d'événements avec des invitations sécurisées, réservations des billets aux événement et hôtels{" "}
             <strong style={{ color: "#6EE7B3" }}>Préparez-vous.</strong>
           </p>
 
@@ -168,11 +168,6 @@ export default function Home() {
                 : <><i className="fas fa-bell" /> Me notifier</>}
             </button>
           </form>
-
-          <p style={{ color: "#8896B3", fontSize: "0.8rem", animation: "fadeUp 0.7s ease-out 0.45s both" }}>
-            <i className="fas fa-shield-alt" style={{ color: "#6EE7B3", marginRight: 5 }} />
-            Pas de spam. Juste une notification au lancement.
-          </p>
         </section>
 
         {/* ── STATS BAR ── */}
@@ -249,47 +244,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── PRICING TEASER ── */}
-        <section style={{ marginBottom: "5rem" }}>
-          <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
-            <span className="badge" style={{ marginBottom: "1rem" }}>
-              <i className="fas fa-tag" /> Tarifs — Bientôt disponibles
-            </span>
-            <h2 style={{ fontSize: "clamp(1.8rem, 5vw, 2.8rem)", fontWeight: 800 }}>
-              Simple, <span className="gradient-text">transparent</span>, accessible
-            </h2>
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "1.5rem" }}>
-            {[
-              { icon: "fas fa-seedling", name: "Starter", price: "Gratuit", desc: "20 invitations/mois, QR codes inclus, analytics de base.", accent: "#6EE7B3" },
-              { icon: "fas fa-rocket", name: "Pro", price: "Bientôt", desc: "Invitations illimitées, analytics avancés, support prioritaire.", accent: "#3B82F6", featured: true },
-              { icon: "fas fa-building", name: "Enterprise", price: "Sur mesure", desc: "API dédiée, intégrations custom, SLA garanti, account manager.", accent: "#C0F2B6" },
-            ].map(p => (
-              <div key={p.name} style={{
-                background: p.featured ? "linear-gradient(135deg, rgba(110,231,179,0.1), rgba(59,130,246,0.1))" : "rgba(13,16,24,0.7)",
-                backdropFilter: "blur(14px)",
-                border: `1px solid ${p.featured ? "rgba(110,231,179,0.4)" : "rgba(110,231,179,0.14)"}`,
-                borderRadius: "1.8rem", padding: "2rem", textAlign: "center",
-                position: "relative",
-                boxShadow: p.featured ? "0 0 40px rgba(110,231,179,0.1)" : "none",
-              }}>
-                {p.featured && (
-                  <div style={{
-                    position: "absolute", top: -12, left: "50%", transform: "translateX(-50%)",
-                    background: "linear-gradient(90deg, #6EE7B3, #3B82F6)",
-                    color: "#080A10", fontSize: "0.72rem", fontWeight: 700,
-                    padding: "0.3rem 1rem", borderRadius: 20, whiteSpace: "nowrap",
-                  }}>⭐ Recommandé</div>
-                )}
-                <i className={p.icon} style={{ fontSize: "2rem", color: p.accent, marginBottom: "1rem", display: "block" }} />
-                <h3 style={{ fontWeight: 700, fontSize: "1.2rem", marginBottom: "0.4rem" }}>{p.name}</h3>
-                <div style={{ fontSize: "1.8rem", fontWeight: 800, color: p.accent, marginBottom: "0.8rem" }}>{p.price}</div>
-                <p style={{ color: "#8896B3", fontSize: "0.88rem", lineHeight: 1.6 }}>{p.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
         {/* ── CONTACT FORM ── */}
         <ContactSection />
 
@@ -347,7 +301,7 @@ function ContactSection() {
           <i className="fas fa-envelope" /> Contact
         </span>
         <h2 style={{ fontSize: "clamp(1.8rem, 5vw, 2.8rem)", fontWeight: 800 }}>
-          Parlons de votre <span className="gradient-text">projet</span>
+          Parlons à propos de <span className="gradient-text">Quevvy</span>
         </h2>
         <p style={{ color: "#8896B3", marginTop: "0.8rem" }}>Réponse sous 24h · WhatsApp disponible 24/7</p>
       </div>
@@ -362,7 +316,8 @@ function ContactSection() {
             <i className="fas fa-info-circle" style={{ marginRight: 8 }} />Informations
           </h3>
           {[
-            { icon: "fas fa-envelope", label: "Email", value: "quevvy.platform@outlook.com", href: "mailto:quevvy.platform@outlook.com" },
+            { icon: "fas fa-envelope", label: "E-mail", value: "quevvy.platform@outlook.com", href: "mailto:quevvy.platform@outlook.com" },
+            { icon: "fas fa-envelope", label: "Gmail", value: "quevvy.platform@gmail.com", href: "mailto:quevvy.platform@outlook.com" },
             { icon: "fab fa-whatsapp", label: "WhatsApp DRC", value: "+243 978 089 552", href: "https://wa.me/243978089552" },
             { icon: "fab fa-whatsapp", label: "WhatsApp RWA", value: "+250 792 871 952", href: "https://wa.me/250792871952" },
           ].map(c => (
@@ -448,7 +403,7 @@ function ContactSection() {
           </button>
           <p style={{ color: "#4B5563", fontSize: "0.78rem", textAlign: "center" }}>
             <i className="fas fa-info-circle" style={{ marginRight: 5 }} />
-            Votre client email s'ouvrira pour envoyer le message à Quevvy.
+            Votre client email s'ouvrira pour envoyer le message à l'Entreprise Quevvy.
           </p>
         </form>
       </div>

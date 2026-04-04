@@ -4,15 +4,12 @@ import { PageLoader, Navbar, Footer } from "../components/shared.tsx";
 import "../styles/globals.css";
 
 const DONORS = [
-  { name: "Dr. Christophe Mupenzi", amount: 80, message: "Soutien précieux au lancement", date: "En vedette", initials: "CM", color: "#6EE7B3" },
-  { name: "Député Matayo John", amount: 125, message: "Engagé pour l'innovation locale", date: "En vedette", initials: "MJ", color: "#3B82F6" },
-  { name: "Mulimodero Bahati Michel", amount: 200, message: "Visionnaire du numérique africain", date: "En vedette", initials: "MB", color: "#C0F2B6" },
-  { name: "Diane Vanessa M.", amount: 150, message: "Pour l'empowerment féminin en tech !", date: "15 Jan 2026", initials: "DV", color: "#F472B6" },
-  { name: "John Santos N.", amount: 200, message: "Fier de soutenir l'innovation locale 🇷🇼", date: "14 Jan 2026", initials: "JS", color: "#60A5FA" },
-  { name: "Sophie Ntumba", amount: 75, message: "Pour un avenir numérique inclusif", date: "13 Jan 2026", initials: "SN", color: "#A78BFA" },
-  { name: "Mme Claire Kabila", amount: 250, message: "Éducation numérique pour tous !", date: "12 Jan 2026", initials: "CK", color: "#FBBF24" },
-  { name: "Jean-Paul Mukendi", amount: 100, message: "Soutien local et fier", date: "11 Jan 2026", initials: "JM", color: "#6EE7B3" },
-  { name: "Startup Hub KIN", amount: 500, message: "Innovation collaborative", date: "10 Jan 2026", initials: "SH", color: "#3B82F6" },
+  { name: "Diane Vanessa M.", amount: 150, message: "Pour l'empowerment féminin en tech !", date: "29 Mars 2026" },
+  { name: "John Santos N.", amount: 200, message: "Fier de soutenir l'innovation locale 🇷🇼", date: "01 Avril 2026" },
+  { name: "Sophie Ntumba", amount: 75, message: "Pour un avenir numérique inclusif", date: "04 Avril 2026" },
+  { name: "Mme Claire Kabila", amount: 250, message: "Éducation numérique pour tous !", date: "12 Mars 2026" },
+  { name: "Dr. Christophe Mupenzi", amount: 80, message: "Soutien précieux au lancement", date: "En vedette" },
+  { name: "Député Matayo John", amount: 125, message: "Engagé pour l'innovation locale", date: "En vedette" },
 ];
 
 const totalAmount = DONORS.reduce((s, d) => s + d.amount, 0);
