@@ -246,7 +246,7 @@ export function Footer() {
         ))}
         <p style={{ color: "#8896B3", fontSize: "0.82rem", marginTop: "0.8rem" }}>
           <i className="fas fa-user-tie" style={{ color: "#6EE7B3", marginRight: 6 }} />
-          Fondateur: Gentil Le NoiR Maliyamungu B
+          Fondateur: Equipe Quevvy Platform
         </p>
       </div>
     </footer>

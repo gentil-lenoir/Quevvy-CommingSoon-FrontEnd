@@ -342,7 +342,7 @@ function ContactSection() {
           }}>
             <p style={{ color: "#C9D6FF", fontSize: "0.88rem", lineHeight: 1.6 }}>
               <i className="fas fa-user-tie" style={{ color: "#6EE7B3", marginRight: 6 }} />
-              Fondateur: <strong style={{ color: "#F0F3FA" }}>Gentil Le NoiR Maliyamungu B</strong>
+              Fondateur: <strong style={{ color: "#F0F3FA" }}>Equipe Quevvy Platform</strong>
             </p>
           </div>
         </div>
