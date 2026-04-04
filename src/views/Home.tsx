@@ -101,7 +101,11 @@ export default function Home() {
     { icon: "fas fa-globe-africa", title: "Afrique & Monde", desc: "Multilingue, multi-devises, conçu pour l'Afrique et déployé mondiallement. Votre événement, partout.", delay: "0.4s" },
     { icon: "fas fa-ticket-alt", title: "Ticketing Intégré", desc: "Vendez des billets, gérez les capacités, envoyez des rappels automatiques. Tout en un.", delay: "0.5s" },
     { icon: "fas fa-leaf", title: "Éco-Responsable", desc: "Zéro papier, zéro déchet. Chaque invitation numérique est un geste pour la planète.", delay: "0.6s" },
+    { icon: "fas fa-hotel", title: "Gestion Hôtels/Resto", desc: "Réservez chambres, gérez disponibilités et paiements. Intégration OTA en temps réel pour tous vos événements.", delay: "0.7s" },
+    { icon: "fas fa-envelope", title: "Réservations enligne", desc: "Réservations des billets sur des événements publics, réservations sur des hôtels et autres...", delay: "0.8s" },
   ];
+
+
 
   return (
     <>
@@ -199,7 +203,7 @@ export default function Home() {
               letterSpacing: "-0.02em", lineHeight: 1.2,
             }}>
               Tout ce dont vous avez<br />
-              <span className="gradient-text">besoin pour votre événement</span>
+              <span className="gradient-text">besoin pour votre événement + hébergements & restauration</span>
             </h2>
             <p style={{ color: "#8896B3", marginTop: "1rem", fontSize: "1rem", maxWidth: 540, margin: "1rem auto 0" }}>
               Une plateforme complète pensée pour l'Afrique et le monde. Bientôt disponible.
