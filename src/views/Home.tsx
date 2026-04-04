@@ -1,6 +1,6 @@
 // src/pages/Home.tsx
-import { useState, useEffect, useRef } from "react";
-import { PageLoader, Navbar, Footer, Countdown, Toast } from "../components/shared.tsx";
+import { useState } from "react";
+import { PageLoader, Navbar, Footer, Toast } from "../components/shared.tsx";
 import "../styles/globals.css";
 
 /* ── Animated floating orbs ── */
@@ -76,7 +76,7 @@ export default function Home() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [toast, setToast] = useState<{ msg: string; type: "success" | "error" | "info" } | null>(null);
-  const launchDate = new Date("2025-09-01T00:00:00");
+
 
   const handleNotify = (e: React.FormEvent) => {
     e.preventDefault();

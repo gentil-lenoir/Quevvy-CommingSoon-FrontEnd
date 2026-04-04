@@ -1,6 +1,6 @@
 // src/pages/Donors.tsx
 import { useState } from "react";
-import { PageLoader, Navbar, Footer } from "../components/shared.tsx";
+import { PageLoader, Navbar } from "../components/shared.tsx";
 import "../styles/globals.css";
 
 const DONORS = [
@@ -16,6 +16,7 @@ const totalAmount = DONORS.reduce((s, d) => s + d.amount, 0);
 
 function DonorCard({ donor, delay }: { donor: typeof DONORS[0]; delay: string }) {
   const [hovered, setHovered] = useState(false);
+  const color = "#6EE7B3";
   return (
     <div
       onMouseEnter={() => setHovered(true)}
@@ -32,15 +33,15 @@ function DonorCard({ donor, delay }: { donor: typeof DONORS[0]; delay: string })
       {/* Avatar */}
       <div style={{
         width: 72, height: 72, borderRadius: "50%", margin: "0 auto 1.2rem",
-        background: `linear-gradient(135deg, ${donor.color}33, ${donor.color}11)`,
-        border: `3px solid ${donor.color}66`,
+        background: `linear-gradient(135deg, ${color}33, ${color}11)`,
+        border: `3px solid ${color}66`,
         display: "flex", alignItems: "center", justifyContent: "center",
-        fontSize: "1.5rem", fontWeight: 800, color: donor.color,
+        fontSize: "1.5rem", fontWeight: 800, color: color,
         transition: "transform 0.3s",
         transform: hovered ? "scale(1.08)" : "scale(1)",
-        boxShadow: hovered ? `0 0 20px ${donor.color}30` : "none",
+        boxShadow: hovered ? `0 0 20px ${color}30` : "none",
       }}>
-        {donor.initials}
+        {donor.name.charAt(0)}
       </div>
       <h3 style={{ fontSize: "1.05rem", fontWeight: 700, marginBottom: "0.4rem", color: "#F0F3FA" }}>{donor.name}</h3>
       <div style={{
@@ -132,8 +133,6 @@ export default function Donors() {
             <i className="fas fa-heart" /> Faire un don maintenant
           </a>
         </div>
-
-        <Footer />
       </div>
     </>
   );

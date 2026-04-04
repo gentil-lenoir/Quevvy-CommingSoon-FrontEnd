@@ -1,5 +1,5 @@
 // src/pages/NotFound.tsx
-import { PageLoader, Navbar, Footer } from "./shared.tsx";
+import { PageLoader, Navbar } from "./shared.tsx";
 import "../styles/globals.css";
 
 export function NotFound() {
