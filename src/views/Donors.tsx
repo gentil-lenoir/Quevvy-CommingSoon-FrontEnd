@@ -47,7 +47,7 @@ function DonorCard({ donor, delay }: { donor: typeof DONORS[0]; delay: string })
       <div style={{
         fontSize: "1.8rem", fontWeight: 800, color: "#6EE7B3", marginBottom: "0.3rem",
         background: "linear-gradient(135deg, #6EE7B3, #3B82F6)",
-        WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent",
+        WebkitBackgroundClip: "text", backgroundClip: "text",
       }}>${donor.amount}</div>
       <p style={{ fontSize: "0.8rem", color: "#8896B3", marginBottom: "0.8rem" }}>{donor.date}</p>
       <p style={{ fontSize: "0.9rem", color: "#C9D6FF", lineHeight: 1.55, fontStyle: "italic" }}>"{donor.message}"</p>
