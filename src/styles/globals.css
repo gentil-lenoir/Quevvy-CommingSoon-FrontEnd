@@ -94,7 +94,9 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-
+.logo-long{
+    width: 120px;
+}
 .btn-primary, .btn-secondary {
   display: inline-flex;
   align-items: center;

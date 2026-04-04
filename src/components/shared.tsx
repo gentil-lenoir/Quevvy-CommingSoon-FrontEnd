@@ -112,22 +112,11 @@ export function Navbar({ backLink, showLinks = false }: NavbarProps) {
     }}>
       {/* Logo */}
       <a href="/" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
-        <div style={{
-          width: 38, height: 38, borderRadius: 10,
-          background: "linear-gradient(135deg, #6EE7B3, #3B82F6)",
-          display: "flex", alignItems: "center", justifyContent: "center",
-          animation: "float 3s ease-in-out infinite",
-          boxShadow: "0 4px 14px rgba(110,231,179,0.3)",
-        }}>
-          <i className="fas fa-envelope-open-text" style={{ color: "#080A10", fontSize: "1rem" }} />
+        <div>
+          <img src="/img/logo.png" class="logo-long" alt="Logo of Quevvy" />
         </div>
-        <span style={{
-          fontSize: "1.5rem", fontWeight: 800,
-          background: "linear-gradient(135deg, #C0F2B6, #6EE7B3)",
-          WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent",
-          letterSpacing: "-0.02em",
-        }}>Quevvy</span>
-      </a>
+    </a>
+
 
       {/* Right side */}
       <div style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
@@ -176,12 +165,8 @@ export function Footer() {
       {/* Brand */}
       <div>
         <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: "1rem" }}>
-          <div style={{
-            width: 32, height: 32, borderRadius: 8,
-            background: "linear-gradient(135deg, #6EE7B3, #3B82F6)",
-            display: "flex", alignItems: "center", justifyContent: "center",
-          }}>
-            <i className="fas fa-envelope-open-text" style={{ color: "#080A10", fontSize: "0.85rem" }} />
+          <div>
+            <img src="/img/favicon.png" alt="Logo of Quevvy" style={{ width: 21, height: 21, marginBottom: "-3px" }} />
           </div>
           <span style={{ fontWeight: 800, fontSize: "1.2rem", background: "linear-gradient(135deg, #C0F2B6, #6EE7B3)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>Quevvy</span>
         </div>
