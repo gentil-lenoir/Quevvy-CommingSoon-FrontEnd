@@ -1,6 +1,6 @@
 // src/pages/Donors.tsx
 import { useState } from "react";
-import { PageLoader, Navbar } from "../components/shared.tsx";
+import { PageLoader, Navbar } from "../components/shared";
 import "../styles/globals.css";
 
 const DONORS = [

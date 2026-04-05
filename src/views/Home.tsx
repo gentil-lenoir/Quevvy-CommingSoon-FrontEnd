@@ -1,6 +1,6 @@
 // src/pages/Home.tsx
 import { useState } from "react";
-import { PageLoader, Navbar, Footer, Toast } from "../components/shared.tsx";
+import { PageLoader, Navbar, Footer, Toast } from "../components/shared";
 import "../styles/globals.css";
 
 /* ── Animated floating orbs ── */
