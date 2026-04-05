@@ -164,3 +164,63 @@ body {
   .container { padding: 0 1rem; }
   .btn-primary, .btn-secondary { padding: 0.85rem 1.8rem; font-size: 0.9rem; }
 }
+
+
+/* ========================================
+   FIXED: Google Translate Banner Hider v2.1
+   Surgical - functional widget, invisible banners
+   ======================================= */
+
+/* Google Translate Banner Frame - THE MAIN CULPRIT */
+
+/* ========================================
+   Google Translate v2/v3 + Gtranslate Banner Hider
+   Surgical - hides ALL banners/frames/widgets invisibly
+   Specific, !important, bulletproof across themes
+   ======================================= */
+
+/* Google Translate Classic v2 Banners */
+.goog-te-banner-frame,
+.goog-te-menu-frame,
+.goog-te-gadget,
+#goog-gt-tt,
+.goog-te-balloon-frame { 
+  display: none !important; 
+  visibility: hidden !important; 
+  height: 0 !important; 
+  width: 0 !important; 
+  opacity: 0 !important; 
+  overflow: hidden !important;
+  position: absolute !important;
+  z-index: -9999 !important;
+}
+
+/* Google Translate v3 / Modern Widget */
+.skiptranslate,
+.goog-te-gadget-simple,
+[role="menu"],
+.translate-widget { 
+  display: none !important; 
+}
+
+/* Gtranslate Plugin Variants */
+.gtranslate_wrapper,
+.gtranslate,
+#gt_request,
+.gt_switcher_wrapper { 
+  display: none !important; 
+}
+
+/* Skiptranslate & Toolbar Fixes */
+body > .skiptranslate,
+.notranslate,
+.translate-icon-container { 
+  display: none !important; 
+}
+
+/* Emergency Global Fallback */
+iframe[src*="translate.google.com"],
+iframe[src*="gtranslate"] { 
+  display: none !important; 
+  height: 0 !important; 
+}
