@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./views/Home.tsx";
-import Donors from "./views/Donors.tsx";
-import Donate from "./views/Donate.tsx";
+import Home from "./views/Home";
+import Donors from "./views/Donors";
+import Donate from "./views/Donate";
 import {Analytics} from '@vercel/analytics/react';
 
-function App() {
+const App: FC = () => {
   return (
     <Router>
       <Analytics />
